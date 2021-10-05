@@ -19,7 +19,7 @@ flutter packages pub run build_runner watch --delete-conflicting-outputs
 
 flutter pub global run pubviz --format=dot print > reports/flutterdeps/output.dot
 
-flutter pub global run dcdg   -o reports\docs\diagrams\src\diagrams.puml
+flutter pub global run dcdg -o reports\docs\diagrams\src\diagrams.puml
 
 
 flutter 
@@ -46,5 +46,3 @@ flutter pub run intl_utils:generate
 
 
 flutter pub run flutter_native_splash:create
-
-
