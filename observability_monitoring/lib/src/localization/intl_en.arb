@@ -1,0 +1,6 @@
+{
+  "appTitle": "observability_monitoring",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
