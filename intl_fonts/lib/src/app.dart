@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:intl_fonts/src/localization_gen/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:intl_fonts/src/presentation/themes/my_typography.dart';
 
-import 'sample_feature/sample_item_details_view.dart';
-import 'sample_feature/sample_item_list_view.dart';
-import 'settings/settings_controller.dart';
-import 'settings/settings_view.dart';
+import 'presentation/features/home/ui/sample_item_details_view.dart';
+import 'presentation/features/home/ui/sample_item_list_view.dart';
+import 'presentation/features/settings/viewmodel/settings_controller.dart';
+import 'presentation/features/settings/ui/settings_view.dart';
 
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {
@@ -56,9 +58,14 @@ class MyApp extends StatelessWidget {
           // Define a light and dark color theme. Then, read the user's
           // preferred ThemeMode (light, dark, or system default) from the
           // SettingsController to display the correct theme.
-          theme: ThemeData(),
+          theme: ThemeData(
+            // when using custom fonts we define it via typography text themes so 
+            // that we have the right custom font, geometry, color, etc
+            typography: myTypography,
+          ),
           darkTheme: ThemeData.dark(),
           themeMode: settingsController.themeMode,
+          
 
           // Define a function to handle named routes in order to support
           // Flutter web url navigation and deep linking.
