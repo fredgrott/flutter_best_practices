@@ -3,6 +3,7 @@
 // license that can be found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:themes_colors/src/infrastructure/myappcolors.dart';
 
 // Dark:  200 Variant 50 or Variant 700
 // light  500 Variant 700
@@ -12,66 +13,66 @@ import 'package:flutter/material.dart';
 //
 //
 
-ColorScheme myLightColorScheme = const ColorScheme(
-  primary: Color(0xff6200ee), // deep purple  A700
-  primaryVariant: Color(0xff3700b3),// deep purple 900?
-  secondary: Color(0xff03dac6),
-  secondaryVariant: Color(0xff018786),
-  surface: Colors.white,
-  background: Colors.white,
-  error: Color(0xffb00020),
-  onPrimary: Colors.white,
-  onSecondary: Colors.black,
-  onSurface: Colors.black,
-  onBackground: Colors.black,
-  onError: Colors.white,
+ColorScheme myLightColorScheme = ColorScheme(
+  primary: myLightPrimaryColor, // deep purple  A700
+  primaryVariant: myLightPrimaryVariantColor,// deep purple 900?
+  secondary: myLightSecondaryColor,
+  secondaryVariant: myLightSecondaryVariantColor,
+  surface: myLightSurfaceColor,
+  background: myLightBackgroundColor,
+  error: myLightErrorColor,
+  onPrimary: myLightOnPrimaryColor,
+  onSecondary: myLightOnSecondaryColor,
+  onSurface: myLightOnSurfaceColor,
+  onBackground: myLightOnBackgroundColor,
+  onError: myLightOnErrorColor,
   brightness: Brightness.light,
 );
 
-ColorScheme myHighContrastLightColorScheme = const ColorScheme(
-  primary: Color(0xff0000ba),
-  primaryVariant: Color(0xff000088),
-  secondary: Color(0xff66fff9),
-  secondaryVariant: Color(0xff018786),
-  surface: Colors.white,
-  background: Colors.white,
-  error: Color(0xff790000),
-  onPrimary: Colors.white,
-  onSecondary: Colors.black,
-  onSurface: Colors.black,
-  onBackground: Colors.black,
-  onError: Colors.white,
+ColorScheme myHighContrastLightColorScheme = ColorScheme(
+  primary: myLightHighContrastPrimaryColor,
+  primaryVariant: myLightHighContrastPrimaryVariantColor,
+  secondary: myLightHighContrastSecondaryColor,
+  secondaryVariant: myLightHighContrastSecondaryVariantColor,
+  surface: myLightHighContrastSurfaceColor,
+  background: myLightHighContrastBackgroundColor,
+  error: myLightHighContrastErrorColor,
+  onPrimary: myLightHighContrastOnPrimaryColor,
+  onSecondary: myLightHighContrastOnSecondaryColor,
+  onSurface: myLightHighContrastOnSurfaceColor,
+  onBackground: myLightHighContrastOnBackgroundColor,
+  onError: myLightHighContrastOnErrorColor,
   brightness: Brightness.light,
 );
 
-ColorScheme myDarkColorScheme = const ColorScheme(
-  primary: Color(0xffbb86fc),
-  primaryVariant: Color(0xff3700B3),
-  secondary: Color(0xff03dac6),
-  secondaryVariant: Color(0xff03dac6),
-  surface: Color(0xff121212),
-  background: Color(0xff121212),
-  error: Color(0xffcf6679),
-  onPrimary: Colors.black,
-  onSecondary: Colors.black,
-  onSurface: Colors.white,
-  onBackground: Colors.white,
-  onError: Colors.black,
+ColorScheme myDarkColorScheme = ColorScheme(
+  primary: myDarkPrimaryColor,
+  primaryVariant: myDarkPrimaryVariantColor,
+  secondary: myDarkSecondaryColor,
+  secondaryVariant: myDarkSecondaryVariantColor,
+  surface: myDarkSurfaceColor,
+  background: myDarkBackgroundColor,
+  error: myDarkErrorColor,
+  onPrimary: myDarkOnPrimaryColor,
+  onSecondary: myDarkOnSecondaryColor,
+  onSurface: myDarkOnSurfaceColor,
+  onBackground: myDarkOnBackgroundColor,
+  onError: myDarkOnErrorColor,
   brightness: Brightness.light,
 );
 
-ColorScheme myHighContrastDarkColorScheme = const ColorScheme(
-  primary: Color(0xffefb7ff),
-  primaryVariant: Color(0xffbe9eff),
-  secondary: Color(0xff66fff9),
-  secondaryVariant: Color(0xff66fff9),
-  surface: Color(0xff121212),
-  background: Color(0xff121212),
-  error: Color(0xff9b374d),
-  onPrimary: Colors.black,
-  onSecondary: Colors.black,
-  onSurface: Colors.white,
-  onBackground: Colors.white,
-  onError: Colors.black,
+ColorScheme myHighContrastDarkColorScheme = ColorScheme(
+  primary: myDarkHighContrastPrimaryColor,
+  primaryVariant: myDarkHighContrastPrimaryVariantColor,
+  secondary: myDarkHighContrastSecondaryColor,
+  secondaryVariant: myDarkHighContrastSecondaryVariantColor,
+  surface: myDarkHighContrastSurfaceColor,
+  background: myDarkHighContrastBackgroundColor,
+  error: myDarkHighContrastErrorColor,
+  onPrimary: myDarkHighContrastOnPrimaryColor,
+  onSecondary: myDarkHighContrastOnSecondaryColor,
+  onSurface: myDarkHighContrastOnSurfaceColor,
+  onBackground: myDarkHighContrastOnBackgroundColor,
+  onError: myDarkHighContrastOnErrorColor,
   brightness: Brightness.dark,
 );
